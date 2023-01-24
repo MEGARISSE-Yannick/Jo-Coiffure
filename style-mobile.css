@@ -1,5 +1,6 @@
 :root {
       --main: #DAA023;
+      --dark-main:#bf9456;
       --second: #1A1D21;
       --third: #707070;
 }
@@ -29,6 +30,7 @@ body {
 }
 
 #about p {
+      font-family: Georgia, 'Times New Roman', Times, serif ;
       padding: 2em;
 }
 
@@ -43,7 +45,7 @@ body {
 
 .header a span {
       position: absolute;
-      top: 80vh;
+      top: 75vh;
       left: 50%;
       width: 24px;
       height: 24px;
@@ -90,25 +92,19 @@ body {
       }
 }
 
-blockquote {
+figure {
       position: relative;
       background: var(--second);
       padding: 2em 2.5em;
-
+      border: solid 1px var(--third);
 }
 
-blockquote p {
+figure p {
       margin: 0;
 }
 
 
-figure {
-      padding: 1.5em;
-}
-
 .header {
-      background-image: url("/files/Salon.jpg");
-      background-position: 20%;
       color: whitesmoke;
       padding: 0;
       text-align: center;
@@ -190,10 +186,14 @@ figure {
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: var(--main);
+      color: var(--dark-main);
 }
-
+.column h3{
+      font-family: 'Notable', sans-serif;
+      letter-spacing: .1em;
+}
 .left {
+      transition: 2s;
       width: 95%;
       height: 20vh;
       padding: 1em;
@@ -205,6 +205,7 @@ figure {
 }
 
 .right {
+      transition: 2s;
 
       width: 95%;
       padding: 1em;
@@ -217,8 +218,60 @@ figure {
 
 }
 
-@media only screen and (max-width: 768px) {
 
+
+.bg-image {
+      /* The image used */
+      background-image: url("/files/Salon Blog.jpg");
+
+      /* Add the blur effect */
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+
+      /* Full height */
+      height: 100vh;
+
+      /* Center and scale the image nicely */
+      background-position: left 80% top 30%;
+      transition: 2s;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+      .left {
+            transition: 2s;
+            width: 95%;
+            height: 30vh;
+            padding: 1em;
+            margin: 1em 0 2em 0;
+            background-color: var(--second);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+      }
+      
+      .right {
+            transition: 2s;
+            width: 95%;
+            padding: 1em;
+            height: 30vh;
+            margin: 1em 0 2em 0;
+            background-color: var(--second);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+      
+      }
+      
       /* For mobile phones: */
       [class*="col-"] {
             width: 100%;
@@ -240,8 +293,6 @@ figure {
       }
 
       .header {
-            background-image: url("/files/Salon.jpg");
-            background-position: left 80% top 60%;
             transition: 2s;
             color: whitesmoke;
             padding: 0;
