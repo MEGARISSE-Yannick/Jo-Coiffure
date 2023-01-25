@@ -5,7 +5,8 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style-mobile.css">
+      <link rel="stylesheet" href="/css/style-mobile.css">
+      <link rel="stylesheet" href="/css/navbar.css">
       <link rel="stylesheet" href="https://kit.fontawesome.com/3e4633abf0.css" crossorigin="anonymous">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,19 +19,34 @@
 </head>
 
 <body>
+      <div class="navbar">
+            <div class="logo">
+                  <img style="width: 4em;height: 4em;" src="/files/logo.svg" alt="Logo Jo Coiffure">
+            </div>
+            <div class="menu">
+                  <a href="index-mobile.html" class="link">
+                        <div class="title">Home</div>
+                        <div class="bar"></div>
+                  </a>
+
+                  <a href="calendrier.html" class="link">
+                        <div class="title">Reserver</div>
+                        <div class="bar"></div>
+
+                  </a>
+            </div>
+      </div>
 
       <section class="header">
             <div class="bg-image"></div>
 
-            <div class="bg-text"> 
+            <div class="bg-text">
                   <img src="/files/logo.svg" alt="Logo Jo Coiffure">
                   <a href="#about"><span></span></a>
-                  <figure>
-                              <p>
-                                    “Parole de coiffeur : il est interdit de descendre avant la raie.”
-                              </p>
-                        <figcaption>—Pierre Desproges.</figcaption>
-                  </figure>
+                        <p>
+                              “Parole de coiffeur : il est interdit de descendre avant la raie.” <br><br>  —Pierre Desproges.
+                        </p>
+                   
             </div>
 
       </section>
@@ -57,8 +73,11 @@
                         Chez nous, vous avez la possibilité de prendre soin de vos précieux cheveux et d'écouter de la
                         bonne musique avec une ambiance bien Réunionnaise au rendez-vous.
                   </p>
-                  <button class="button-32" role="button">RESERVER</button>
-
+                  <a href="calendrier.html">
+                        <button class="button-32" role="button">
+                              Prendre RDV
+                        </button>
+                  </a>
             </div>
 
       </section>
@@ -73,11 +92,12 @@
                               <img src="files/rasage.svg" alt="">
 
                               <div class="left-text">
-                                   <h3>
-                                    RASAGE
-                                   </h3> <p>
+                                    <h3>
+                                          RASAGE
+                                    </h3>
+                                    <p>
                                           <br>
-                                          
+
                                           Pour un résultat haut de gamme, dans notre salon, nous combinons
                                           les techniques modernes avec les techniques traditionnelles.
 
@@ -87,9 +107,9 @@
 
                         <div class="right">
                               <div class="right-text">
-<h3>
-      LA COUPE DE CHEVEUX 
-</h3>
+                                    <h3>
+                                          LA COUPE DE CHEVEUX
+                                    </h3>
                                     <p>
                                           <br>
                                           Toute coupe à votre goût suivie d'un rasage avec un rasoir droit, un tonique
@@ -120,10 +140,11 @@
                               <img src="files/barbe.svg" alt="">
 
                               <div class="left-text">
-                                 <h3>
-                                    TAILLE DE LA BARBE 
-                                 </h3>   <p>
-                                          <br> 
+                                    <h3>
+                                          TAILLE DE LA BARBE
+                                    </h3>
+                                    <p>
+                                          <br>
                                           Restez à votre meilleur avec une coupe de barbe régulière. Arrêtez-vous pour
                                           une procédure
                                           de barbe!
@@ -135,8 +156,10 @@
                         </div>
 
                   </div>
-
-                  <button class="button-32" role="button">RESERVER</button>
+                  <a href="calendrier.html">
+                        <button class="button-32" role="button"> Prendre RDV
+                        </button>
+                  </a>
             </div>
 
       </section>

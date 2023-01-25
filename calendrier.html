@@ -1,97 +1,148 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style2.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style-reservation.css">
+        <link rel="stylesheet" href="/css/style-mobile.css">
+        <link rel="stylesheet" href="/css/navbar.css">
+        <link rel="stylesheet" href="https://kit.fontawesome.com/3e4633abf0.css" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Unlock&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+
+        <script src="main.js"></script>
+        <title>Réservation Jo Coiffure</title>
+        <script>
+            // Ignore this in your implementation
+            window.isMbscDemo = true;
+        </script>
+        <!-- Mobiscroll JS and CSS Includes -->
+        <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
+        <script src="js/mobiscroll.javascript.min.js"></script>
+
+
+
     </head>
 
-    <body>
-        <section id="cld">
-            <section id="enteteCld">
-                <h1 id="cldT">JANVIER</h1>
-                <section id="avantetapres">
-                    <button id="avant" class="cldBtn">◄</button>
-                    <button id="apres" class="cldBtn" style="margin-left: 25%;">►</button>
-                </section>
-            </section>
+<body>
+    <div class="navbar">
 
-            <section id="cldBoite">
-                <div id="jours">
-                    <div class="jour">lun</div>
-                    <div class="jour">mar</div>
-                    <div class="jour">mer</div>
-                    <div class="jour">jeu</div>
-                    <div class="jour">ven</div>
-                    <div class="jour">sam</div>
-                    <div class="jour">dim</div>
-                </div>
+        <div class="logo">
+            <img style="width: 4em;height: 4em;" src="/files/logo.svg" alt="Logo Jo Coiffure">
+        </div>
+        <div class="menu">
+            <a href="index-mobile.html" class="link">
+                home
+                <div class="bar"></div>
+            </a>
 
-                <div id="semaine1">
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                </div>
+            <a href="calendrier.html" class="link">
+                reserver
+                <div class="bar"></div>
 
-                <div id="semaine1" class="semaine">
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                </div>
-                <div id="semaine2" class="semaine">
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                </div>
-                <div id="semaine3" class="semaine">
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                </div>
-                <div id="semaine4" class="semaine">
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
+            </a>
+        </div>
+
+    </div>
+
+    <section class="header">
+        <div class="bg-image"></div>
+
+        <div class="bg-text">
+            <img src="/files/logo.svg" alt="Logo Jo Coiffure">
+            <a href="#about"><span></span></a>
+                  <p>
+                        “Parole de coiffeur : il est interdit de descendre avant la raie.” <br><br>  —Pierre Desproges.
+                  </p>
+             
+      </div>
+
+
+        <div id="container">
+            <h1 style="padding: 1em;">
+                Selectionner le jour de votre reservation !
+            </h1>
+
+            <form action="#" method="post" id="contact_form">
+                <div class="date">
+
+                    <label for="mobile-picker-input"></label>
+                    <input type="text" id="mobile-picker-input" class="md-mobile-picker-input"
+                        placeholder="Selectionne une date" />
                 </div>
 
-                <div id="semaine5" class="semaine">
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
+                <div class="name">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Mon nom" name="name" id="name_input" required>
                 </div>
-                <div id="semaine6" class="semaine">
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
-                    <div class="case"></div>
+                <div class="email">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Mon email" name="email" id="email_input" required>
                 </div>
-            </section>
-        </section>
-    </body>
+                <div class="telephone">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Mon numero" name="telephone" id="telephone_input" required>
+                </div>
+
+                <div class="message">
+                    <label for="message"></label>
+                    <textarea name="message" placeholder="Si vous voulez nous laisser un petit message 🔥"
+                        id="message_input" cols="20" rows="5"></textarea>
+                </div>
+                <div class="submit">
+                    <button type="submit" class="button-32" role="button" value="Send Message"
+                        id="form_button">RESERVER</button>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <script>
+
+        mobiscroll.setOptions({
+            locale: mobiscroll.localeFr,  // Specify language like: locale: mobiscroll.localePl or omit setting to use default
+            theme: 'ios',                 // Specify theme like: theme: 'ios' or omit setting to use default
+            themeVariant: 'dark'         // More info about themeVariant: https://docs.mobiscroll.com/5-21-2/javascript/calendar#opt-themeVariant
+        });
+
+        mobiscroll.datepicker('#mobile-picker-input', {
+            controls: ['calendar']        // More info about controls: https://docs.mobiscroll.com/5-21-2/javascript/calendar#opt-controls
+        });
+
+        var instance = mobiscroll.datepicker('#mobile-picker-button', {
+            controls: ['calendar'],       // More info about controls: https://docs.mobiscroll.com/5-21-2/javascript/calendar#opt-controls
+            showOnClick: false,           // More info about showOnClick: https://docs.mobiscroll.com/5-21-2/javascript/calendar#opt-showOnClick
+            showOnFocus: false,           // More info about showOnFocus: https://docs.mobiscroll.com/5-21-2/javascript/calendar#opt-showOnFocus
+        });
+
+        instance.setVal(new Date(), true);
+
+        mobiscroll.datepicker('#mobile-picker-mobiscroll', {
+            controls: ['calendar']        // More info about controls: https://docs.mobiscroll.com/5-21-2/javascript/calendar#opt-controls
+        });
+
+        mobiscroll.datepicker('#mobile-picker-inline', {
+            controls: ['calendar'],       // More info about controls: https://docs.mobiscroll.com/5-21-2/javascript/calendar#opt-controls
+            display: 'inline'             // Specify display mode like: display: 'bottom' or omit setting to use default
+        });
+
+        document
+            .getElementById('show-mobile-date-picker')
+            .addEventListener('click', function () {
+                instance.open();
+                return false;
+            });
+    </script>
+
+</body>
+
 </html>
