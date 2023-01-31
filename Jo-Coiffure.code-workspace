@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Bureau/css"
+		},
+		{
+			"path": "../../../Bureau/js"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Jo-Coiffure"
+	}
+}
