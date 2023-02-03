@@ -1,257 +1,146 @@
 <!DOCTYPE html>
-<html lang="Fr">
+<html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible">
-  <content="If-edge"></content>
-    <meta name="viewport" content="width-device-width,initial-scale=1.0">
-    <title>Jo Coiffure</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style-mobile.css">
+      <link rel="stylesheet" href="https://kit.fontawesome.com/3e4633abf0.css" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Unlock&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+
+      <script src="main.js"></script>
+      <title>Jo Coiffure</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="Logo Jo Coiffure.png" width="100"></img>
+
+      <section class="header">
+            <img src="/files/logo.svg" alt="Logo Jo Coiffure">
+
+            <a href="#about"><span></span></a>
+
+
+            <figure>
+                  <blockquote cite="https://www.huxley.net/bnw/four.html">
+                        <p>
+                              “Parole de coiffeur : il est interdit de descendre avant la raie.”
+                        </p>
+                  </blockquote>
+                  <figcaption>—Pierre Desproges.</figcaption>
+            </figure>
+
+      </section>
+
+      <section id="about" class="row">
+            <div class="col-6">
+
+                  <h2>A propos de Jo coiffure</h2>
+                  <div class="propos">
+                        <img src="/files/Jo Photo.jpg" alt="">
+                        <img src="/files/Joyce Flash.jpg" alt="">
+                  </div>
+                  <p>
+                        Notre salon de coiffure a vu le jour en 2018.
+                        Il est le territoire créé uniquement pour ce qui apprécient la qualité supérieure et un look
+                        impeccable.
+                        <br>
+                        <br>
+                        Avec un savoir faire artisanale notre gamme de services englobe de nombreuses techniques et
+                        procédures - du rasage et de la coiffure au rasoir droit au soin de la barbe et au toilettage
+                        des sourcils.
+                        <br>
+                        <br>
+                        Chez nous, vous avez la possibilité de prendre soin de vos précieux cheveux et d'écouter de la
+                        bonne musique avec une ambiance bien Réunionnaise au rendez-vous.
+                  </p>
+                  <button class="button-32" role="button">RESERVER</button>
+
+            </div>
+
+      </section>
+
+      <section id="cando" class="row">
+            <div class="col-6">
+
+                  <h2>Ce que propose Jo coiffure</h2>
+
+                  <div class="column">
+                        <div class="left">
+                              <img src="files/rasage.svg" alt="">
+
+                              <div class="left-text">
+                                    <p>RASAGE
+                                          <br>
+                                          <br>
+                                          Pour un résultat haut de gamme, dans notre salon, nous combinons
+                                          les techniques modernes avec les techniques traditionnelles.
+
+                                    </p>
+                              </div>
+                        </div>
+
+                        <div class="right">
+                              <div class="right-text">
+
+                                    <p>
+                                          LA COUPE DE CHEVEUX <br> <br>
+                                          Toute coupe à votre goût suivie d'un rasage avec un rasoir droit, un tonique
+                                          pour la peau
+                                          et un massage des épaules.
+                                    </p>
+                              </div>
+
+                              <img src="files/coiffure.svg" alt="">
+
+                        </div><!--
+                        <div class="left">
+                              <img src="files/moustache.svg" alt="">
+
+                              <div class="left-text">
+
+                                    <p>
+                                          LA TAILLE DE LA MOUSTACHE <br> <br>
+                                          Vous cherchez à essayer quelque chose de nouveau avec vos poils faciaux ? Nos
+                                          barbiers
+                                          tailleront joliment votre moustache.
+                                    </p>
+                              </div>
+                        </div>
+-->
+
+                        <div class="left">
+                              <img src="files/barbe.svg" alt="">
+
+                              <div class="left-text">
+                                    <p>
+                                          TAILLE DE LA BARBE <br> <br>
+                                          Restez à votre meilleur avec une coupe de barbe régulière. Arrêtez-vous pour
+                                          une procédure
+                                          de barbe!
+                                    </p>
+                              </div>
+
+
+
+                        </div>
+
+                  </div>
+
+                  <button class="button-32" role="button">RESERVER</button>
+            </div>
+
+      </section>
+
+      <div class="footer">
+
+      &copy; Contactez-nous au 0693 47 78 67</p>
+      <i class="fa fa-instagram"></i>
       </div>
-      <div class="onglets">
-        <a href="">Connexion / Inscription </a>
-        <a href="">Nos prestations</a>
-        <a href="">Prise de rdv</a>
-        <a href="mailto:brlsecurite974@gmail.com">Contact</a>
-      </div>
-    </nav>
 
-  </header>
-
-  <div class="principal">
-    <h1>
-      <i class="fa-solid fa-scissors"></i>La coiffure, notre but
-    </h1>
-
-    <h4>"Parole de coiffeur : il es interdit de descendre avant la raie." Pierre Desproges</h4>
-  </div>
-
-  <section class="premieres-presentations">
-    <div class="gauche">
-      <p>Passionné par la coiffure pour hommes, mon établissement a vu le jour en 2018. Avec un savoir faire
-        artisannale, chaque jour, nos objectifs sont; répondre aux besoins de chaque client, essayer les tendances du
-        moment. Soucieux de l'hygiène, nous désinfectons chaques outils avant, et après chaque utilisation, afin d'être
-        toujours en conformitée, avec les règles de la profession.</p>
-    </div>
-    <div class="droite">
-      <img src="Salon Jo.jpg" width="200">
-    </div>
-  </section>
-
-  <section class="offres">
-    <h1>L'équipe</h1>
-    <p>Avec Idriss le commandant de bord, nos coiffeurs sont, Allan la simplicité, Gaël "Le tatoué", Joyce "Flaaash",
-      Tracy "l'élite", et le légendaire Dembelle.
-    </p>
-
-    <div class="offres-cartes">
-
-      <div class="carte" align="center">
-        <h1>Nos prestations</h1>
-        <img src="coiffure.png" alt="">
-      </div>
-      <div class="carte" align="center">
-        <h1>Prise de rdv</h1>
-        <img src="planning.png" alt="">
-      </div>
-      <div> Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalype"> Eucalype </a> from <a
-          href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="partenaires">
-    <h1><i class="fa-solid fa-ear-listen"></i> Nous sommes à votre écoute</h1>
-    <div class="partenaires-images">
-      <p><img src="Salon.jpg" alt=""></p>
-      <p><img src="Dessin Tracy.jpg" alt=""></p>
-      <p><img src="Le Port st Leu.jpg" alt=""></p>
-      <p><img src="Jo Photo.jpg" alt=""></p>
-    </div>
-  </section>
-
-  <!--#BLOG SECTION-->
-
-  <section class="blog" id="blog">
-
-    <h2 class="section-title">Derniers articles</h2>
-
-    <div class="article-card-group">
-
-      <article class="article-card">
-
-        <div class="card-head">
-          <img src="coiffure piquante.jpg" alt="Banner Image for Receive money in any currency with no fees"
-            class="card-img">
-        </div>
-
-        <div class="card-body">
-
-          <p class="article-author">By <a href="#">Pierre-Guillaume LIGDAMIS</a></p>
-
-          <h3 class="card-title">
-            <a href="#">Tendance coiffure homme 2022 : faut-il croire au retour en force de la coiffure à pics ?</a>
-          </h3>
-
-          <p class="card-text">
-            Il fallait s’y attendre… L’engouement retrouvé pour la mode des années 2000 s’empare tout doucement du monde
-            de la beauté, faisant ainsi renaître des tendances des décennies passées que l’on pensait enterrées à
-            jamais. La preuve en est avec le retour en grâce d’une coiffure qui ne manque pas de piquant, empruntée à la
-            culture punk : la coupe spiky ou la coupe à pics.
-          </p>
-
-        </div>
-
-      </article>
-
-      <article class="article-card">
-
-        <div class="card-head">
-          <img src="Jade Paris.webp" alt="Banner Image for Treat yourself without worrying about money"
-            class="card-img">
-        </div>
-
-        <div class="card-body">
-
-          <p class="article-author">By <a href="#">Célia FOURNIER</a></p>
-
-          <h3 class="card-title">
-            <a href="#">Championnats du monde de coiffure : la victoire d’une coiffeuse mancelle</a>
-          </h3>
-
-          <p class="card-text">
-            Jade Paris, coiffeuse au Mans d’origine vendéenne, a remporté aux championnats du monde de coiffure 2022 la
-            médaille d’or dans la catégorie coiffure homme et la médaille de bronze en équipe.
-          </p>
-
-        </div>
-
-      </article>
-
-      <article class="article-card">
-
-        <div class="card-head">
-          <img src="Salon Blog.jpg" alt="Banner Image for Take your Easybank card wherever you go" class="card-img">
-        </div>
-
-        <div class="card-body">
-
-          <p class="article-author">By <a href="#">Mathilde Sallé de Chou</a></p>
-
-          <h3 class="card-title">
-            <a href="#">Dans ce salon de coiffure, le tarif est fixé en fonction de la longueur des cheveux, pas du
-              genre</a>
-          </h3>
-
-          <p class="card-text">
-            Ici, on oublie les “coupes hommes” et les “coupes femmes”. Dans ce salon de coiffure inclusif, les tarifs
-            sont fixés en fonction de la longueur des cheveux, un point c’est tout. Une distinction qui vient balayer
-            tout un système resté longtemps très injuste pour les femmes.À Tréguier en Bretagne, les femmes aux cheveux
-            court ont de quoi se réjouir. En effet, dans le salon de Nicolas Das Neves Pinto, elles payent le même prix
-            que les hommes aux cheveux courts.
-          </p>
-
-        </div>
-
-      </article>
-
-      <article class="article-card">
-
-        <div class="card-head">
-          <img src="Stephane blog.jpg" alt="Banner Image for Our invite-only Beta accounts are now live!"
-            class="card-img">
-        </div>
-
-        <div class="card-body">
-
-          <p class="article-author">By <a href="#">Nelça Koé</a></p>
-
-          <h3 class="card-title">
-            <a href="#">La barbe, l’atout indispensable avec l’âge et la perte des cheveux</a>
-          </h3>
-
-          <p class="card-text">
-            Ce 4 septembre est marqué par la journée internationale de la barbe. Il s’agit avant tout d’un moment
-            détente, de plaisir et de privilège pour les hommes barbus.téphane est coiffeur depuis 20 ans. Il s’occupe
-            aussi de la barbe de ses clients. Il nous explique : “Souvent les gens veulent faire des barbes qu’ils ont
-            vu sur des acteurs français ou américains dans les films.”
-
-            Il cite comme exemple la barbe fine de Robert Downey Junior, l’interprète d’Iron Man dans les films Marvel.
-            Mais il précise qu’il ne peut pas toujours tailler une barbe d’après un modèle : “Tout dépend de la barbe du
-            client.”
-
-            Les inspirations des clients sont principalement les héros de film.
-          </p>
-
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-  <!--Page de contact-->
-
-  <form>
-    <div class="separation">
-      <h1>Contactez-nous</h1>
-
-    </div>
-    <div class="corps-formulaire">
-      <div class="gauche">
-        <div class="groupe">
-          <label>Votre prénom</label>
-          <input type="text">
-          <i class="fa-solid fa-user"></i>
-        </div>
-        <div class="groupe">
-          <label>Votre adresse e-mail</label>
-          <input type="text">
-          <i class="fa-regular fa-envelope"></i>
-        </div>
-        <div class="groupe">
-          <label>Votre téléphone</label>
-          <input type="text">
-          <i class="fa-solid fa-mobile"></i>
-        </div>
-
-      </div>
-      <div class="droite">
-        <div class="groupe">
-          <label>Message</label>
-          <textarea></textarea>
-        </div>
-      </div>
-    </div>
-
-    <div class="pied-formulaire" align="center">
-      <button>Envoyer le message</button>
-    </div>
-  </form>
-  <footer>
-    <p>&copy; Contactez-nous au 0693 47 78 67</p>
-    <div class="social-media">
-      <p><i class="fab fa-facebook"></i></p>
-      <p><i class="fab fa-instagram"></i></p>
-      <p><i class="fab fa-linkedin"></i></p>
-    </div>
-  </footer>
 </body>
 
 </html>
