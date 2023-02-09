@@ -1,7 +1,6 @@
 :root {
       --main: #DAA023;
       --second: #1A1D21;
-      --third: #707070;
 }
 
 h2 {
@@ -34,7 +33,7 @@ body {
 
 #cando {
       margin-top: 5em;
-      background-color: var(--third);
+      background-color: var(--second);
 }
 
 .header a {
